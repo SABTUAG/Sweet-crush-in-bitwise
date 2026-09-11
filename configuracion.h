@@ -1,0 +1,4 @@
+#ifndef CONFIGURACION_H
+#define CONFIGURACION_H
+
+#endif // CONFIGURACION_H
