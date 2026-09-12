@@ -7,14 +7,18 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    configuracion.cpp \
     fichas.cpp \
+    gestionDeMemoria.cpp \
+    herramientas.cpp \
+    juego.cpp \
     main.cpp \
     tablero.cpp
 
 HEADERS += \
-    configuracion.h \
     fichas.h \
+    gestionDeMemoria.h \
+    herramientas.h \
+    juego.h \
     tablero.h
 
 FORMS +=
