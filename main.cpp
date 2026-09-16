@@ -1,5 +1,4 @@
 #include <iostream>
-#include "herramientas.h"
 //#include "configuracion.h"
 //#include "fichas.h"
 //#include "tablero.h"
@@ -8,27 +7,9 @@ using namespace std;
 // Integracion de sistema
 
 int main(){
-    int x = 5;
-    int y = 11;
-
-    int bit_and = x&y;
-    int bit_or = x|y;
-    int bit_xor = x^y;
-    int bit_not = ~x;
-    int movebitToRight = x>>1;
-    int moveBitToLeft = y<<1;
-
-    cout<<bit_and<<endl;
-    cout<<bit_or<<endl;
-    cout<<bit_xor<<endl;
-    cout<<bit_not<<endl;
-    cout<<movebitToRight<<endl;
-    cout<<moveBitToLeft<<endl;
-
-    cout<<numeroAleatorio(1,7)<<endl;
-    cout<<numeroAleatorio(1,7)<<endl;
-    cout<<numeroAleatorio(1,7)<<endl;
-    cout<<numeroAleatorio(1,7)<<endl;
+    char texto[3]= "12";
+    cout<<"Ingresar un mensaje: ";
+    cin>>texto;
 
     return 0;
 }
