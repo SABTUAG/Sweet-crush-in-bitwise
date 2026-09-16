@@ -1,6 +1,6 @@
 //#include "configuracion.h"
 //Fichas, metodos relacionados a las fichas
 
-int crearFicha(unsigned int posicion);
+unsigned char crearFicha(unsigned short posicionFicha);
 int detectarFichaEspecial();
 int detectarFichaVacia();

@@ -1,4 +1,5 @@
 #include <iostream>
+#include "herramientas.h"
 //#include "configuracion.h"
 //#include "fichas.h"
 //#include "tablero.h"
@@ -23,6 +24,11 @@ int main(){
     cout<<bit_not<<endl;
     cout<<movebitToRight<<endl;
     cout<<moveBitToLeft<<endl;
+
+    cout<<numeroAleatorio(1,7)<<endl;
+    cout<<numeroAleatorio(1,7)<<endl;
+    cout<<numeroAleatorio(1,7)<<endl;
+    cout<<numeroAleatorio(1,7)<<endl;
 
     return 0;
 }
