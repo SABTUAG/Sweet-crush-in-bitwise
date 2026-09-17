@@ -3,10 +3,12 @@ char* reservarEspacio(unsigned short espacios){
     char* elemento = new char[espacios];
     return elemento;
 }
+
 char **crearVector(unsigned short longitud){
     char **vector = new char*[longitud];
     return vector;
 }
+
 char **crearMatriz(unsigned short filas, unsigned short columnas){
     char** matriz = crearVector(filas);
     for(unsigned short fila=0; fila<filas; fila++){
@@ -16,16 +18,18 @@ char **crearMatriz(unsigned short filas, unsigned short columnas){
 }
 
 // Liberar espacios
-void liberarEspacio(char* elemento){
+void liberarEspacio(char*& elemento){
     delete[] elemento;
     elemento = nullptr;
 }
-void liberarEspacioVector(char** vector){
+
+void liberarEspacioVector(char**& vector){
     delete[] vector;
     vector = nullptr;
 }
-void liberarEspacioDeMatriz(char** matriz, unsigned short filas){
-    for(unsigned short fila=0; fila<filas; fila++){
+
+void liberarEspacioDeMatriz(char**& matriz, unsigned short filas){
+    for(unsigned short fila = 0; fila < filas; fila++){
         liberarEspacio(matriz[fila]);
     }
     liberarEspacioVector(matriz);
