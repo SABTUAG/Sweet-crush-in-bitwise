@@ -1,17 +1,21 @@
 #include <iostream>
-#include "gestionDeMemoria.h"
+//#include "gestionDeMemoria.h"
 //#include "configuracion.h"
 //#include "fichas.h"
 //#include "tablero.h"
-using namespace std;
-
+#include "juego.h"
+using namespace std; 
 // Integracion de sistema
 
 int main(){
-    cout<<"Bienvenidos al juego"<<endl; 
-    cout<<"Presiona cualquier tecla para continuar..."<<endl;
-    char* tecla = reservarEspacio(1);
-    tecla[0] = 'a'; 
-    liberarEspacio(tecla);
+    bool flagExe=true;
+    while(flagExe){
+        instruccionesDeJuego();
+        int accionJugador;
+        cout<<"Menu de opciones "<<endl;
+        cout<<"1. Jugar\n 2. Salir"<<endl;
+        cin>>accionJugador;
+        if (accionJugador==2) break;
+    }
     return 0;
 }

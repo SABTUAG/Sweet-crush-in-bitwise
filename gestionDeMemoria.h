@@ -1,6 +1,6 @@
 #ifndef GESTIONDEMEMORIA_H
 #define GESTIONDEMEMORIA_H
-char* reservarEspacio(unsigned short espacios);
+char* reservarEspacios(unsigned short espacios);
 char **crearVector(unsigned short longitud);
 char **crearMatriz(unsigned short filas, unsigned short columnas);
 // Liberar espacios

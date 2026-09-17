@@ -1,5 +1,5 @@
 // Reservar espacios para caracteres
-char* reservarEspacio(unsigned short espacios){
+char* reservarEspacios(unsigned short espacios){
     char* elemento = new char[espacios];
     return elemento;
 }
