@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
     char texto[3]= "12";
-    cout<<"Ingresar un mensaje: ";
+    cout<<"Ingrese la cantidad de columnas: ";
     cin>>texto;
 
     return 0;
