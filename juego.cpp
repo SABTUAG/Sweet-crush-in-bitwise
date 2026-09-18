@@ -10,22 +10,25 @@ using namespace std;
 // del tablero
 
 // Configuraciones de juego básicas
-void instruccionesDeJuego(){
-    cout<<"\n***  BIENVENIDO A CANDY CRUSH  ***"<<endl;
-    cout<<"Instrucciones de juego"<<endl;
-    cout<<"1. El objetivo del juego es lograr un puntaje determinado en un numero limitado de movimientos."<<endl;
-    cout<<"2. El puntaje necesario para ganar y los movimientos disponibles se definen por el tamaño del tablero."<<endl;
-    cout<<"¡Mucha suerte!\n"<<endl;
+//Dentro de iniciar Juego;
+void estadoJuego(
+    int filas,
+    int columnas,
+    int eliminacionesRealizadasPorJugador,
+    int fichasEliminadasTotales,
+    int combinacionesDetectadas,
+    int PuntuacionObtenida,
+    int cascadasTotalesObtenidas,
+    int movimientosRestantes
+    ){
+    cout<<"----"<<endl;
+    cout<<"Dimensiones actuales de tablero: "<<filas<<"x"<<columnas<<endl;
+    cout<<"Fichas eliminadas por ti: "<<eliminacionesRealizadasPorJugador<<endl;
+    cout<<"Fichas eliminadas totales: "<<fichasEliminadasTotales<<endl;
+    cout<<"Combinaciones detectadas: "<<combinacionesDetectadas<<endl;
+    cout<<"Cascadas obtenidas: "<<cascadasTotalesObtenidas<<endl;
+    cout<<"Puntuacion obtenida: "<<PuntuacionObtenida<<endl;
+    cout<<"Movimientos restantes: "<<movimientosRestantes<<endl;
+    cout<<"----\n"<<endl;
 }
-void iniciarPartida(){
-    char nombreJugador[20]; 
-    cout<<"Ingrese su nombre: ";
-    cin.getline(nombreJugador, 20);
-    cout<<"¡Hola, "<<nombreJugador<<"! ¡Bienvenido a Candy Crush!"<<endl;
-    int filas; 
-    cout<<"Ingrese el número de filas del tablero: ";
-    cin>>filas;
-    int columnas;
-    cout<<"Ingrese el número de columnas del tablero: ";
-    cin>>columnas;
-}
+void iniciarJuego();

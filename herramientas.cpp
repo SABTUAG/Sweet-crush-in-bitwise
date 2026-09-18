@@ -1,16 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int inputInt(char mensaje[]){
-    int numero;
-    cout<<mensaje;
-    cin>>numero;
-    return numero;
+void borrarLineaAnteriorEnConsola(){
+    cout<<"\033[A\33[2K\r";
 }
 
-void validarEntrada(int& numero, int min, int max){
-    while(numero<min || numero>max){
-        cout<<"Error: Ingrese un numero entre "<<min<<" y "<<max<<endl;
-        numero = inputInt("ingresa un numero: ");
+int ingresarNumero(int minimo, int maximo){
+    int numero;
+    while(true){
+        cout<<"Ingresa el valor numerico: ";
+        cin>>numero;
+        cin.clear();
+        cin.ignore(1000, '\n');
+        if (numero<minimo || numero>maximo){
+            borrarLineaAnteriorEnConsola();
+            continue;
+        }
+        return numero;
     }
 }
