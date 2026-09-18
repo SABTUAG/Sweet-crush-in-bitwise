@@ -8,7 +8,6 @@ CONFIG += c++17
 
 SOURCES += \
     fichas.cpp \
-    gestionDeMemoria.cpp \
     herramientas.cpp \
     juego.cpp \
     main.cpp \
@@ -16,7 +15,6 @@ SOURCES += \
 
 HEADERS += \
     fichas.h \
-    gestionDeMemoria.h \
     herramientas.h \
     juego.h \
     tablero.h

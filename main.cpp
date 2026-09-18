@@ -1,21 +1,27 @@
 #include <iostream>
 //#include "gestionDeMemoria.h"
-//#include "configuracion.h"
+//#include "herramientas.h"
 //#include "fichas.h"
 //#include "tablero.h"
 #include "juego.h"
-using namespace std; 
+using namespace std;
 // Integracion de sistema
 
+/*
 int main(){
-    bool flagExe=true;
-    while(flagExe){
-        instruccionesDeJuego();
-        int accionJugador;
-        cout<<"Menu de opciones "<<endl;
-        cout<<"1. Jugar\n 2. Salir"<<endl;
-        cin>>accionJugador;
-        if (accionJugador==2) break;
-    }
+    cout<<"*** BIENVENIDO A SWEET CRUSH ***"<<endl;
+    //iniciarJuego
+    cout<<"\n * Menu *"<<endl;
+    cout<<"Escriba 2 si desea salir del juego"<<endl;
+    cout<<"Escriba cualquier numero diferente de 2 para una nueva partida"<<endl;
+    return 0;
+}
+*/
+int main(){
+    cout<<"*** BIENVENIDO A SWEET CRUSH ***"<<endl;
+    iniciarJuego();
+
+   //
+    //mostrarMensajesTemporales(advertencia);
     return 0;
 }
